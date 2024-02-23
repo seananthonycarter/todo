@@ -27,7 +27,6 @@ class App extends Component{
     var newNotes = document.getElementById("newNotes").value;
     const data=new FormData();
     data.append("newNote", newNotes);
-    alert(newNotes);
 
     fetch(this.API_URL+"api/todo/AddNote", {
       method: "POST",
